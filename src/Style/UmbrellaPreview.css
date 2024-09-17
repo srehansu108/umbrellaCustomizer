@@ -1,0 +1,44 @@
+/* Keyframes for spinning animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.umbrella-preview {
+  position: relative;
+  display: inline-block;
+}
+
+.umbrella-image {
+  max-width: 50rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  margin-top: 20px;
+}
+
+.logo-preview {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* No need to define static loader color here as it's controlled dynamically */
+.loading-icon {
+  max-width: 40rem; /* Adjusted to fit within the container */
+  height: 40rem; /* Adjusted to fit within the container */
+  width: 40rem; /* Adjusted to fit within the container */
+  margin-right: 10rem; /* Consistent with umbrella-image */
+  margin-left: 17rem; /* Consistent with umbrella-image */
+  margin-top: 50px; /* Consistent with umbrella-image */
+  animation: spin 1s linear infinite; /* Apply the spinning animation */
+  fill: currentColor;
+}

@@ -1,0 +1,56 @@
+.logo-uploader {
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top:15px;
+}
+
+.upload-button {  
+  font-size: 25px; /* Fixed size for font */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  font-weight: normal;
+  text-transform: uppercase; /* Ensures text is in uppercase */
+  padding:10px 20px;
+}
+
+/* Ensure the icon and text are well aligned */
+.upload-logo-icon {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px;
+  margin-right: 20px; /* Space between icon and text */
+  fill: white;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;  
+}
+
+
+/* Loader icon styles */
+.loader-icon {
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+/* Spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,31 @@
+/* Define background colors for each theme */
+.pink-theme {
+  background-color: #ffebf1;
+  --loader-color: #d81b60; /* Darker pink for the loader */
+}
+
+.blue-theme {
+  background-color: #e0f7fa;
+  --loader-color: #0288d1; /* Darker blue for the loader */
+}
+
+.yellow-theme {
+  background-color: #fffde7;
+  --loader-color: #fbc02d; /* Darker yellow for the loader */
+}
+
+.customizer-container {
+  min-height: 100vh; /* Ensures it covers the full viewport height */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Display children in a row */
+  justify-content: space-between; /* Space out the preview and controls */
+  padding: 20px; /* Add padding for spacing */
+  box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+.controls {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex: 1; /* Allow the controls to take up space */
+  padding: 15rem 3rem; /* Add padding inside the controls */
+}
+
